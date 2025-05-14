@@ -12,7 +12,7 @@ public class LoginServlet extends HttpServlet {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
 
-        // Hardcoded admin login
+        
         if ("admin".equals(username) && "admin123".equals(password)) {
             // Create session
             HttpSession session = request.getSession();
